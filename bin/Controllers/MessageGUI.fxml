@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="876.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MessageSingalController">
+   <children>
+      <TextArea layoutX="-150.0" layoutY="26.0" prefHeight="0.0" prefWidth="0.0" />
+      <HBox alignment="TOP_CENTER" layoutY="9.0">
+         <children>
+            <Canvas fx:id="canvasRight" height="865.0" width="325.0" />
+            <VBox alignment="TOP_CENTER" spacing="120.0" HBox.hgrow="NEVER">
+               <children>
+                  <Text fill="#6f6f6f" strokeType="OUTSIDE" strokeWidth="0.0" text="Message Page" textAlignment="CENTER" wrappingWidth="399.936767578125">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Text>
+                  <VBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <HBox alignment="TOP_CENTER" spacing="500.0" />
+                        <HBox id="container" fx:id="hbInformationContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="700.0" spacing="20.0" stylesheets="@blueBorder.css">
+                           <children>
+                              <VBox spacing="25.0">
+                                 <children>
+                                    <HBox spacing="110.0">
+                                       <children>
+                                          <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="25.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Subject:">
+                                                   <font>
+                                                      <Font size="23.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="From:">
+                                                   <font>
+                                                      <Font size="23.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sent at:">
+                                                   <font>
+                                                      <Font size="23.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                             <padding>
+                                                <Insets top="5.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="25.0">
+                                             <children>
+                                                <Text fx:id="txtSubject" strokeType="OUTSIDE" strokeWidth="0.0" text="77">
+                                                   <font>
+                                                      <Font size="23.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtFrom" strokeType="OUTSIDE" strokeWidth="0.0" text="Moodle">
+                                                   <font>
+                                                      <Font size="23.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtSentAt" strokeType="OUTSIDE" strokeWidth="0.0" text="Dwayne (You)">
+                                                   <font>
+                                                      <Font size="23.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                             <padding>
+                                                <Insets top="5.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <VBox spacing="20.0">
+                                       <children>
+                                          <HBox spacing="103.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Content:">
+                                                   <font>
+                                                      <Font size="23.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtContent" strokeType="OUTSIDE" strokeWidth="0.0" text="5/5/2020">
+                                                   <font>
+                                                      <Font size="23.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                          <HBox spacing="30.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Linked Request:">
+                                                   <font>
+                                                      <Font size="23.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtLinkedRequest" fill="#2865ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Click here to go to the request page" underline="true">
+                                                   <font>
+                                                      <Font size="23.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </VBox>
+            <Canvas fx:id="canvasLeft" height="865.0" width="325.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

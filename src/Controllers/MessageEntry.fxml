@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MessageEntryController">
+   <children>
+      <HBox fx:id="hbMainContainer" alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="50.0" prefWidth="1290.0" spacing="50.0" styleClass="d" stylesheets="@message.css">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <ImageView fx:id="imgCheckBox" fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Messages/icons8_checked_checkbox_50px_3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgStar" fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Messages/icons8_star_50px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox fx:id="hbContainer" alignment="CENTER">
+               <children>
+                  <Text fx:id="txtSubject" strokeType="OUTSIDE" strokeWidth="0.0" text="me, Mikle (Manager)" wrappingWidth="161.1483612060547" HBox.hgrow="NEVER" />
+                  <Text fx:id="txtContent" strokeType="OUTSIDE" strokeWidth="0.0" text="Request to give me more permissions example example example example example example example" wrappingWidth="570.483642578125" HBox.hgrow="NEVER" />
+                  <Text fx:id="txtDate" strokeType="OUTSIDE" strokeWidth="0.0" text="17 Dec" HBox.hgrow="NEVER" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

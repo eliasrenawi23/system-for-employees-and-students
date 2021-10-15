@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="876.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.IssueRequestController">
+   <children>
+      <TextArea layoutX="-150.0" layoutY="26.0" prefHeight="0.0" prefWidth="0.0" />
+      <HBox layoutY="9.0">
+         <children>
+            <Canvas fx:id="canvasRight" height="865.0" width="219.0" />
+            <VBox alignment="CENTER">
+               <children>
+                  <Text fill="#6f6f6f" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue a Request" textAlignment="CENTER" wrappingWidth="323.13671875">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <VBox id="text" prefHeight="773.0" prefWidth="840.0" spacing="30.0" stylesheets="@blueBorder.css">
+                     <children>
+                        <HBox spacing="130.0">
+                           <children>
+                              <HBox minWidth="180.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Issue date: " />
+                                 </children>
+                              </HBox>
+                              <Text fx:id="txtCurrentDate" strokeType="OUTSIDE" strokeWidth="0.0" text="5/5/2020" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="110.0">
+                           <children>
+                              <HBox minWidth="180.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Relate information system:" />
+                                 </children>
+                              </HBox>
+                              <ComboBox fx:id="cbInformationSystem" prefHeight="38.0" prefWidth="289.0" promptText="Moodle" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="128.0">
+                           <children>
+                              <HBox minWidth="180.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Request Description:" />
+                                 </children>
+                              </HBox>
+                              <TextArea fx:id="taRequestDescription" minHeight="-Infinity" prefHeight="85.0" prefWidth="526.0" promptText="Enter request description" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="100.0">
+                           <children>
+                              <HBox minWidth="180.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description of current state:" />
+                                 </children>
+                              </HBox>
+                              <TextArea fx:id="taDescriptionOfCurrentState" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="531.0" promptText="Enter description of the request current state" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="130.0">
+                           <children>
+                              <HBox minWidth="-Infinity" prefHeight="38.0" prefWidth="180.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description of requested change:" />
+                                 </children>
+                              </HBox>
+                              <TextArea fx:id="taDescriptionOfRequestedChange" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="526.0" promptText="Enter description of the requested change" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="130.0">
+                           <children>
+                              <HBox minWidth="180.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Comments: " />
+                                 </children>
+                              </HBox>
+                              <TextArea fx:id="taComments" minHeight="-Infinity" prefHeight="85.0" prefWidth="526.0" promptText="Enter comments about the request" />
+                           </children>
+                        </HBox>
+                        <VBox>
+                           <children>
+                              <HBox spacing="160.0">
+                                 <children>
+                                    <HBox minWidth="180.0" spacing="5.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Attach files:" />
+                                          <Text fx:id="txtNumberOfAttachedFiles" strokeType="OUTSIDE" strokeWidth="0.0" text="(5 files)" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="hbBrowseFiles" alignment="CENTER_RIGHT" minWidth="125.0" prefHeight="26.0" prefWidth="125.0" spacing="10.0">
+                                       <children>
+                                          <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Images/charts/icons8_browse_folder_50px_2.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Browse files" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="721.0" spacing="15.0">
+                                 <children>
+                                    <HBox fx:id="hbIssueRequest" alignment="CENTER_RIGHT" minWidth="125.0" prefHeight="26.0" prefWidth="125.0" spacing="10.0">
+                                       <children>
+                                          <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Images/Request%20Details/icons8_send_50px.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Request" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+            <Canvas fx:id="canvasLeft" height="865.0" width="283.0" />
+         </children>
+      </HBox>
+      <TextArea layoutX="-232.0" layoutY="-50.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

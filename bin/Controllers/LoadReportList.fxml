@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="876.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoadReportList">
+   <children>
+      <HBox layoutY="7.0">
+         <children>
+            <Canvas fx:id="canvasRight" height="870.0" width="245.0" />
+            <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="805.0" spacing="20.0">
+               <children>
+                  <Text fill="#6f6f6f" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a Report" textAlignment="CENTER" wrappingWidth="422.13671875">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#6f6f6f" strokeType="OUTSIDE" strokeWidth="0.0" text="Double click to select a Report" textAlignment="CENTER" wrappingWidth="422.13671875">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="tblReport" onMouseClicked="#clickItem" prefHeight="644.0" prefWidth="805.0">
+                    <columns>
+                      <TableColumn fx:id="tcReportId" prefWidth="189.0" text="Report ID" />
+                      <TableColumn fx:id="tcDateOfCreation" minWidth="0.0" prefWidth="229.0" text="Date of Creation" />
+                        <TableColumn fx:id="tcRange" prefWidth="359.0" text="Range" />
+                    </columns>
+                  </TableView>
+                  <VBox spacing="35.0">
+                     <children>
+                        <AnchorPane />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </VBox>
+            <Canvas fx:id="canvasLeft" height="870.0" width="245.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

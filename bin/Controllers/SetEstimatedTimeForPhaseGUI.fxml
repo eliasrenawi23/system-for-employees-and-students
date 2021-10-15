@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="vbEvaluationReport" spacing="15.0" stylesheets="@blueBorder.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SetEstimatedTimeForPhaseController">
+   <children>
+      <Text id="containerTitle" fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Estimated Time for Phase">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <VBox id="container" prefHeight="149.0" prefWidth="682.0" spacing="15.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="5.0">
+               <children>
+                  <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select the estimate time for this phase" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="15.0">
+               <children>
+                  <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Select estimated date:" />
+                  <DatePicker fx:id="dpEstimatedTime" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <HBox fx:id="hbSendEstimateTime" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="73.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Request%20Details/icons8_upload_mail_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Send" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="50.0" />
+   </padding>
+</VBox>

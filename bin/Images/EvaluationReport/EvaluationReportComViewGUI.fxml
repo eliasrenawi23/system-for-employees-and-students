@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane stylesheets="@../../Controllers/blueBorder.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EvaluationReportComViewController">
+   <children>
+      <VBox fx:id="vbEvaluationReport" spacing="15.0">
+         <children>
+            <Text id="containerTitle" fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluation Report">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <VBox id="container" prefHeight="54.0" prefWidth="682.0" spacing="15.0" stylesheets="@../../Controllers/blueBorder.css">
+               <children>
+                  <HBox spacing="15.0">
+                     <children>
+                        <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Place:" />
+                        <Label id="text" fx:id="lblPlace" stylesheets="@../../Controllers/blueBorder.css" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="15.0">
+                     <children>
+                        <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Description of required change:" />
+                        <Label id="text" fx:id="lblDescriptionOfRequiredChange" stylesheets="@../../Controllers/blueBorder.css" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="15.0">
+                     <children>
+                        <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Accepted results (benefit):" />
+                        <Label id="text" fx:id="lblResults" stylesheets="@../../Controllers/blueBorder.css" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="15.0">
+                     <children>
+                        <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Constraints:" />
+                        <Label id="text" fx:id="lblConstraint" stylesheets="@../../Controllers/blueBorder.css" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="15.0">
+                     <children>
+                        <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Risks:" />
+                        <Label id="text" fx:id="lblRisks" stylesheets="@../../Controllers/blueBorder.css" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="15.0">
+                     <children>
+                        <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Estimated execution time:" />
+                        <Label id="text" fx:id="lblEstimatedExecTime" stylesheets="@../../Controllers/blueBorder.css" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="876.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ChangesBySupervisorController">
+   <children>
+      <HBox layoutY="7.0">
+         <children>
+            <Canvas fx:id="canvasRight" height="870.0" width="185.0" />
+            <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1022.0" spacing="20.0">
+               <children>
+                  <Text fill="#6f6f6f" strokeType="OUTSIDE" strokeWidth="0.0" text="Changes Done by Supervisor" textAlignment="CENTER" wrappingWidth="501.13671875">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="tblSupervisorUpdates" prefHeight="644.0" prefWidth="987.0">
+                    <columns>
+                      <TableColumn fx:id="tcPhaseId" minWidth="0.0" prefWidth="115.0" text="Phase ID" />
+                        <TableColumn fx:id="tcSupervisorEmpNum" minWidth="0.0" prefWidth="196.0" text="Supervisor Employee Number" />
+                        <TableColumn fx:id="tcDateOfChange" prefWidth="219.0" text="Date of change" />
+                        <TableColumn fx:id="tcOldDeadline" prefWidth="218.0" text="Old Deadline" />
+                        <TableColumn fx:id="tcNeadDeadline" prefWidth="248.0" text="New Deadline" />
+                    </columns>
+                  </TableView>
+                  <VBox spacing="35.0">
+                     <children>
+                        <AnchorPane />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </VBox>
+            <Canvas fx:id="canvasLeft" height="870.0" width="245.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

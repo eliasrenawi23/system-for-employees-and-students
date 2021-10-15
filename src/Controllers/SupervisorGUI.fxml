@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1374.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SupervisorGUIController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="867.0" prefWidth="153.0" spacing="10.0" style="-fx-background-color: #1A2841;">
+         <children>
+            <AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #2B3E61;">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="37.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_physics_100px.png" />
+                     </image>
+                     <effect>
+                        <GaussianBlur radius="0.0" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="101.0" prefWidth="153.0">
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="62.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_create_100px_2.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="75.0" prefHeight="27.0" prefWidth="129.0" text="Issue a Request" textAlignment="CENTER" textFill="#5a708f">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="101.0" prefWidth="153.0">
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="58.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Different%20Colors/icons8_magazine_100px.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="75.0" prefHeight="27.0" prefWidth="129.0" text="My Requests" textAlignment="CENTER" textFill="#5a708f">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="101.0" prefWidth="153.0">
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="58.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_spy_100px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="75.0" prefHeight="27.0" prefWidth="92.0" text="Inspect" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="101.0" prefWidth="153.0">
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="59.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_envelope_96px.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="75.0" prefHeight="27.0" prefWidth="92.0" text="Messages" textAlignment="CENTER" textFill="#5a708f">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="101.0" prefWidth="153.0">
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="59.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_settings_96px.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="75.0" prefHeight="27.0" prefWidth="92.0" text="Settings" textAlignment="CENTER" textFill="#5a708f">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <AnchorPane layoutX="153.0" prefHeight="90.0" prefWidth="1221.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="28.0" layoutX="1163.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_alarm_100px_2.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="28.0" layoutX="21.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_menu_50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="28.0" layoutX="65.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_search_50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="1177.0" layoutY="26.0" text="7" textAlignment="CENTER" textFill="#3f8ec9">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="67.0" layoutX="1071.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/the%20rock.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="192.0" layoutX="1029.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_expand_arrow_50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text layoutX="953.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi, Dwayne">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Text>
+         </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="152.0" layoutY="126.0" prefHeight="741.0" prefWidth="1221.0">
+         <children>
+            <TableView fx:id="tblSupervisorRequests" layoutX="16.0" layoutY="174.0" prefHeight="521.0" prefWidth="1186.0" scaleShape="false" style="-fx-background-color: #B2BCCE;">
+              <columns>
+                <TableColumn fx:id="tcRequestID" prefWidth="147.0" text="Request ID" />
+                <TableColumn fx:id="tcIssueDate" minWidth="1.0" prefWidth="238.0" text="Issue date" />
+                  <TableColumn fx:id="tcCurrentPhase" prefWidth="234.0" text="Current Phase" />
+                  <TableColumn fx:id="tcStatus" prefWidth="218.0" text="Status" />
+                  <TableColumn fx:id="tcDeadline" prefWidth="348.0" text="Deadline" />
+              </columns>
+               <padding>
+                  <Insets right="-1.0" />
+               </padding>
+            </TableView>
+            <ImageView fitHeight="34.0" fitWidth="28.0" layoutX="171.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_search_50px.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="16.0" layoutY="144.0" promptText="Search requests by id" />
+            <ImageView fitHeight="34.0" fitWidth="28.0" layoutX="16.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_open_pane_100px.png" />
+               </image>
+            </ImageView>
+            <Text fill="#5e5e5e" layoutX="53.0" layoutY="104.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="Open table configurations" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1221.0">
+               <children>
+                  <Text fill="#6b6b6b" strokeType="OUTSIDE" strokeWidth="0.0" text="List of requests">
+                     <font>
+                        <Font size="53.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="1308.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8_refresh_100px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgRubinCube" fitHeight="150.0" fitWidth="200.0" layoutX="957.0" layoutY="158.0" onMouseClicked="#onBtnCubePress" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/rubiks-cube.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER_LEFT" layoutX="153.0" layoutY="90.0" prefHeight="36.0" prefWidth="1221.0" spacing="3.0" style="-fx-border-color: #DDDDDD;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Examine">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/general/icons8_forward_100px.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Requests List">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="3.0" left="5.0" top="3.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

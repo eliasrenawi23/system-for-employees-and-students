@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="vbEvalReportPage1Container" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EvaluationReportReviewPage1Controller">
+   <children>
+      <HBox alignment="BASELINE_LEFT" spacing="15.0">
+         <children>
+            <Text fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluation Report">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Page 1 out of 3" wrappingWidth="80.9296875" />
+         </children>
+      </HBox>
+      <VBox id="container" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="696.0" spacing="15.0" stylesheets="@blueBorder.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Place:" />
+            <HBox prefHeight="80.0" prefWidth="682.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The college database center" />
+               </children>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description of required change:" />
+            <HBox prefHeight="80.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is an example description or required change." />
+               </children>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Accepted results (benefit):" />
+            <HBox prefHeight="80.0" prefWidth="682.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is an example of accepted results" />
+               </children>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="15.0" />
+            <VBox alignment="BOTTOM_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="93.0" prefWidth="682.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT">
+                     <children>
+                        <HBox fx:id="hbNextPage" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="73.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/EvaluationReport/icons8_circled_right_50px.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Next page" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

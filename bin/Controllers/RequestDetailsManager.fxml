@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="876.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RequestDetailsManagerController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="877.0" prefWidth="1348.0">
+         <children>
+            <Canvas fx:id="canvasRight" height="870.0" width="366.0" />
+            <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="609.0" spacing="20.0">
+               <children>
+                  <Text fill="#6f6f6f" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager View" textAlignment="CENTER" wrappingWidth="323.13671875">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <VBox prefHeight="398.0" prefWidth="698.0" spacing="35.0">
+                     <children>
+                        <AnchorPane prefHeight="398.0" prefWidth="467.0">
+                           <children>
+                              <VBox spacing="15.0">
+                                 <children>
+                                    <HBox spacing="300.0">
+                                       <children>
+                                          <Text fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Phase Details">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <HBox spacing="10.0">
+                                             <children>
+                                                <HBox fx:id="hbBrowsePhases" alignment="CENTER" spacing="5.0">
+                                                   <children>
+                                                      <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Images/supervisor/icons8_card_exchange_50px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Browse Phases">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox id="container" prefHeight="355.0" prefWidth="472.0" spacing="50.0" stylesheets="@blueBorder.css">
+                                       <children>
+                                          <VBox prefHeight="233.0" prefWidth="186.0" spacing="15.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phase Name: ">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Status:">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Estimated time of completion:">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtPhaseOwner" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluator (assigned by the system):">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deadline: ">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Extended Time:">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Completed on: ">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Time Exception: ">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Requested Time Extension:">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                             <padding>
+                                                <Insets top="5.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox prefHeight="214.0" prefWidth="81.0" spacing="15.0">
+                                             <children>
+                                                <Text fx:id="txtPhaseName" strokeType="OUTSIDE" strokeWidth="0.0" text="Execution">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtPhaseStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="Closed">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtEstimateTimeOfCompletion" strokeType="OUTSIDE" strokeWidth="0.0" text="5 Days">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtAssignedByName" strokeType="OUTSIDE" strokeWidth="0.0" text="John Doe">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtDeadLine" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtExtendedTime" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtCompletedOnTime" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtTimeException" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="txtRequestedTimeExtension" strokeType="OUTSIDE" strokeWidth="0.0" text="2 Days">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                             <padding>
+                                                <Insets top="5.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_LEFT" spacing="30.0">
+                     <children>
+                        <HBox fx:id="hbFullRequestDetails" alignment="CENTER" spacing="5.0">
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/Table/icons8_view_details_50px.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Press to see full request details">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="30.0">
+                     <children>
+                        <HBox fx:id="hbUnfreezeProcess" alignment="CENTER" spacing="5.0">
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/supervisor/icons8_hot_springs_50px_1.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Unfreeze Process">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <Canvas fx:id="canvasLeft" height="870.0" width="373.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

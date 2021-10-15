@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="876.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RequestDetailsController">
+   <children>
+      <TextArea layoutX="-150.0" layoutY="26.0" prefHeight="0.0" prefWidth="0.0" />
+      <HBox alignment="TOP_CENTER" layoutY="9.0">
+         <children>
+            <Canvas fx:id="canvasRight" height="865.0" width="325.0" />
+            <VBox alignment="TOP_CENTER" spacing="120.0" HBox.hgrow="NEVER">
+               <children>
+                  <Text fill="#6f6f6f" strokeType="OUTSIDE" strokeWidth="0.0" text="Request Details" textAlignment="CENTER" wrappingWidth="399.936767578125">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Text>
+                  <VBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <HBox alignment="TOP_CENTER" spacing="500.0" />
+                        <HBox id="container" fx:id="hbInformationContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="700.0" spacing="5.0" stylesheets="@blueBorder.css">
+                           <children>
+                              <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="25.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Request ID:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Relate information system:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Issued by: ">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Issue date: ">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Request Description:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description of current state:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description of requested change:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Comments: ">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </VBox>
+                              <AnchorPane>
+                                 <children>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="25.0">
+                                       <children>
+                                          <Text fx:id="txtRequestID" strokeType="OUTSIDE" strokeWidth="0.0" text="77">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="txtRelatedInfoSystem" strokeType="OUTSIDE" strokeWidth="0.0" text="Moodle">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="txtIssuedBy" strokeType="OUTSIDE" strokeWidth="0.0" text="Dwayne (You)">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="txtIssueDate" strokeType="OUTSIDE" strokeWidth="0.0" text="5/5/2020">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="txtRequestDescription" strokeType="OUTSIDE" strokeWidth="0.0" text="The request is regarding the missleading info...">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="txtDescriptionOfCurrentChange" strokeType="OUTSIDE" strokeWidth="0.0" text="The system is not given me the info.">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="txtDescriptionOfRequestedChange" strokeType="OUTSIDE" strokeWidth="0.0" text="A change is needed regarding the misslead...">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="txtComments" strokeType="OUTSIDE" strokeWidth="0.0" text="This is an example comment.">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </VBox>
+            <Canvas fx:id="canvasLeft" height="865.0" width="325.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

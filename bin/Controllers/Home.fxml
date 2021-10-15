@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="876.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RequestDetailsUserController">
+   <children>
+      <VBox alignment="CENTER" layoutX="336.0" layoutY="26.0" prefHeight="428.0" prefWidth="569.0" spacing="150.0">
+         <children>
+            <Text fill="#6f6f6f" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page" textAlignment="CENTER" wrappingWidth="323.13671875">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <VBox alignment="CENTER" spacing="50.0">
+               <children>
+                  <Text fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the ICM System">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select one of the option from the left menu to get started">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Text fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Need help? ">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="btnHelp" fill="#006fff" strokeType="OUTSIDE" strokeWidth="0.0" text="Click here" underline="true">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text=" (or press 'help' under the profile menu) to get">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Text fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="more details on how to use this application.">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Canvas fx:id="canvasRight" height="872.0" layoutX="-5.0" layoutY="6.0" width="323.0" />
+      <Canvas fx:id="canvasLeft" height="872.0" layoutX="949.0" layoutY="6.0" width="399.0" />
+   </children>
+</AnchorPane>

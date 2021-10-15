@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="876.0" prefWidth="1348.0" stylesheets="@blueBorder.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RequestDetailsDecisionGUIController">
+   <children>
+      <TextArea layoutX="-150.0" layoutY="26.0" prefHeight="0.0" prefWidth="0.0" />
+      <Text id="pageTitle" fill="#6f6f6f" layoutX="522.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Decision" textAlignment="CENTER" wrappingWidth="323.13671875">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <VBox fx:id="vbContainerAll" layoutX="336.0" layoutY="67.0" prefHeight="810.0" prefWidth="682.0" spacing="20.0">
+         <children>
+            <VBox fx:id="vbEvaluationReport" spacing="15.0">
+               <children>
+                  <Text id="containerTitle" fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Committee decision to execute the request">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <VBox id="container" spacing="15.0" stylesheets="@blueBorder.css">
+                     <children>
+                        <HBox spacing="15.0" />
+                        <VBox spacing="50.0">
+                           <children>
+                              <VBox spacing="15.0">
+                                 <children>
+                                    <HBox spacing="15.0">
+                                       <children>
+                                          <HBox spacing="5.0">
+                                             <children>
+                                                <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you agree to execute the request?" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="hbAgreeOrDeclineBtns" alignment="CENTER_RIGHT" spacing="15.0">
+                                       <children>
+                                          <HBox fx:id="hbAgree" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="73.0" spacing="10.0">
+                                             <children>
+                                                <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Images/Request%20Details/icons8_checkmark_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Agree" />
+                                             </children>
+                                          </HBox>
+                                          <HBox fx:id="hbDecline" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="73.0" spacing="10.0">
+                                             <children>
+                                                <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Images/login/icons8_delete_50px_1.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Decline" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="vbRequestMoreDataContainer" prefHeight="207.0" prefWidth="668.0" spacing="10.0">
+                                 <children>
+                                    <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Not enough date to make a decision? Request more data." />
+                                    <TextArea id="text" fx:id="taMoreDataDesc" prefHeight="129.0" prefWidth="668.0" promptText="Please describe the required data" />
+                                    <HBox alignment="CENTER_RIGHT">
+                                       <children>
+                                          <HBox fx:id="hbRequestData" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="73.0" spacing="10.0">
+                                             <children>
+                                                <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Images/Request%20Details/icons8_upload_mail_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Request Data" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" spacing="30.0">
+               <children>
+                  <HBox fx:id="hbFullRequestDetails" alignment="CENTER" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Table/icons8_view_details_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Press to see full request details">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="30.0">
+               <children>
+                  <HBox fx:id="hbEvaluationReport" alignment="CENTER" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/EvaluationReport/icons8_analyze_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Press to see evaluation report">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="30.0">
+               <children>
+                  <HBox fx:id="hbTimeExtension" alignment="CENTER" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Table/icons8_schedule_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Need more time? Request a time extension">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <Canvas fx:id="canvasRight" height="865.0" layoutY="10.0" width="305.0" />
+      <Canvas fx:id="canvasLeft" height="865.0" layoutX="1067.0" layoutY="9.0" width="281.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="apMainAnch" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LogInController">
+   <children>
+      <VBox prefHeight="637.0" prefWidth="718.0">
+         <children>
+            <VBox fx:id="apHeader" alignment="TOP_CENTER" prefHeight="105.0" prefWidth="718.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="665.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="exitbtn" fitHeight="31.0" fitWidth="30.0" onMouseClicked="#exitbtnclick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/login/icons8_cancel_50px.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="0.35" contrast="-1.0" hue="-0.67" saturation="-0.71" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <Text fill="#616161" strokeType="OUTSIDE" strokeWidth="0.0" text="ICM System">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Text>
+                  <VBox spacing="15.0">
+                     <children>
+                        <Text fill="#616161" strokeType="OUTSIDE" strokeWidth="0.0" text="  Connect to server:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <HBox prefHeight="19.0" prefWidth="718.0" spacing="30.0">
+                           <children>
+                              <TextField fx:id="tfIpAddr" prefHeight="25.0" prefWidth="140.0" promptText="ip address" text="localhost" />
+                              <TextField fx:id="tfPort" prefHeight="25.0" prefWidth="140.0" promptText="port" text="5555" />
+                              <Button fx:id="connectBtn" mnemonicParsing="false" text="Connect" />
+                              <HBox alignment="TOP_CENTER" spacing="5.0">
+                                 <children>
+                                    <Text fx:id="txtConnectionStatus" fill="#616161" strokeType="OUTSIDE" strokeWidth="0.0" text="Connection Status: Disconnected" />
+                                    <Circle fx:id="cConnectionStatus" fill="RED" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="30.0" left="15.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <AnchorPane prefHeight="404.0" prefWidth="718.0">
+               <children>
+                  <Text fill="#616161" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="13.0" layoutY="44.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="694.0" style="-fx-border-width: 1; -fx-border-radius: 2; -fx-border-color: #898989;">
+                     <children>
+                        <Text fill="#616161" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in to your account">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                        <Line endX="549.0" layoutX="121.0" layoutY="44.0" startX="-107.0" stroke="#393939ab" strokeWidth="0.7" />
+                        <Text fill="#616161" layoutX="14.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username or Email Address" />
+                        <TextField fx:id="usernamefield" layoutX="14.0" layoutY="84.0" prefHeight="30.0" prefWidth="657.0" text="username10" />
+                        <Text fill="#616161" layoutX="14.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+                        <PasswordField fx:id="passwordfield" layoutX="12.0" layoutY="154.0" prefHeight="30.0" prefWidth="658.0" text="10001" />
+                        <CheckBox layoutX="14.0" layoutY="195.0" mnemonicParsing="false" text="Remember Me" textFill="#616161" visible="false" />
+                        <HBox fx:id="loginbtn" alignment="CENTER" layoutX="11.0" layoutY="225.0" prefHeight="40.0" prefWidth="657.0" style="-fx-background-color: #0790E8; -fx-background-radius: 4;">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <Line endX="549.0" layoutX="118.0" layoutY="284.0" startX="-107.0" stroke="#393939ab" strokeWidth="0.7" />
+                        <VBox layoutX="-9.0" layoutY="293.0" spacing="5.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="16.0" prefWidth="712.0">
+                                 <children>
+                                    <Text fx:id="iFrogotMyPassword" fill="#0084ff" strokeType="OUTSIDE" strokeWidth="0.0" text="I Forgot My Password" underline="true" visible="false" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

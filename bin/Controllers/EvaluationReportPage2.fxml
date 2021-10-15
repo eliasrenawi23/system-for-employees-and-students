@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="vbEvalReportPage2Container" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EvaluationReportPage2Controller">
+   <children>
+      <HBox alignment="BASELINE_LEFT" spacing="15.0">
+         <children>
+            <Text fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluation Report">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Page 2 out of 2" wrappingWidth="80.9296875" />
+         </children>
+      </HBox>
+      <VBox id="container" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="696.0" spacing="17.0" stylesheets="@blueBorder.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Constraints:" />
+            <TextArea prefHeight="102.0" prefWidth="696.0" promptText="Enter the constraints" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Risks:" />
+            <TextArea minHeight="-Infinity" prefHeight="99.0" prefWidth="658.0" promptText="Enter the risks" />
+            <HBox alignment="CENTER_LEFT" spacing="15.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Estimated execution time:" />
+                  <ComboBox prefHeight="25.0" prefWidth="109.0" promptText="In Days" />
+                  <TextField prefHeight="25.0" prefWidth="85.0" promptText="Time" />
+               </children>
+            </HBox>
+            <VBox alignment="BOTTOM_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="58.0" prefWidth="682.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" spacing="15.0">
+                     <children>
+                        <HBox fx:id="hbBackPage" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="73.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/EvaluationReport/icons8_go_back_50px.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Back" />
+                           </children>
+                        </HBox>
+                        <HBox fx:id="hbSendEvalReport" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="73.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/Request%20Details/icons8_upload_mail_50px.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Send" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

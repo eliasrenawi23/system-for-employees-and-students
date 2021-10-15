@@ -1,0 +1,16 @@
+#container {
+	-fx-border-color: #B2BCCE;
+	-fx-border-width: 2;
+	-fx-border-radius: 4;
+}
+#text{
+	-fx-font-size: 17;
+}
+
+#containerTitle{
+	-fx-font-size: 24;
+}
+
+#pageTitle{
+	-fx-font-size: 50;
+}

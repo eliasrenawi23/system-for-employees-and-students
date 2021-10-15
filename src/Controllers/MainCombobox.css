@@ -1,0 +1,4 @@
+.d:hover{
+	-fx-border-color: #0090ff;
+	-fx-border-width: 0 0 3 0;
+}

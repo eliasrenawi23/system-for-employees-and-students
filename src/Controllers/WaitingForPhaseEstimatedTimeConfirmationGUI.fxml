@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="vbEvaluationReport" spacing="15.0" stylesheets="@blueBorder.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.WaitingForPhaseEstimatedTimeConfirmationGUI">
+   <children>
+      <Text id="containerTitle" fill="#515050" strokeType="OUTSIDE" strokeWidth="0.0" text="Waiting for estimated time confirmation">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <VBox id="container" prefHeight="149.0" prefWidth="682.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="5.0">
+               <children>
+                  <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="You have selected an estimated time of " />
+                  <Text id="text" fx:id="txtEstimationDate" strokeType="OUTSIDE" strokeWidth="0.0" text="9989898" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="15.0" />
+            <HBox alignment="CENTER_RIGHT" />
+            <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Please wait for a response soon!" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="50.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="876.0" prefWidth="1348.0" stylesheets="@blueBorder.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ListOfEmployeesController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1348.0">
+         <children>
+            <Text fx:id="txtPageHeader" fill="#6b6b6b" strokeType="OUTSIDE" strokeWidth="0.0" text="Employees and Students">
+               <font>
+                  <Font size="53.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <VBox layoutX="14.0" layoutY="199.0" spacing="25.0">
+         <children>
+            <TableView id="text" fx:id="tblUsers" prefHeight="399.0" prefWidth="1332.0">
+              <columns>
+                <TableColumn fx:id="tcUsername" prefWidth="153.0" text="Username" />
+                <TableColumn fx:id="tcFirstName" prefWidth="243.0" text="First Name" />
+                  <TableColumn fx:id="tcLastName" prefWidth="227.0" text="Last Name" />
+                  <TableColumn fx:id="tcPhoneNumber" prefWidth="196.0" text="Phone number" />
+                  <TableColumn fx:id="tcEmail" prefWidth="285.0" text="Email" />
+                  <TableColumn fx:id="tcIsOnline" prefWidth="195.0" text="Is online" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER_LEFT" spacing="30.0">
+               <children>
+                  <HBox fx:id="hbAssignMaintenance" alignment="CENTER" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Employee/icons8_worker_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign Maintenance and support managers">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="30.0">
+               <children>
+                  <HBox fx:id="hbAssingSupervisor" alignment="CENTER" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Employee/icons8_spy_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign supervisor">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="30.0">
+               <children>
+                  <HBox fx:id="hbAssignCommitteeMembers" alignment="CENTER" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Employee/icons8_head_with_brain_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign committee members">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Text layoutX="14.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here is a list of all the users in the system, double click on a row to view more details">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

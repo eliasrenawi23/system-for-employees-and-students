@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="876.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ListOfRequestsForManagerController">
+   <children>
+      <TableView fx:id="tblManagerOnly" layoutX="30.0" layoutY="253.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#clickItemManager" onMouseEntered="#onMouseEntered" prefHeight="586.0" prefWidth="1295.0" scaleShape="false" style="-fx-background-color: #B2BCCE;">
+         <columns>
+            <TableColumn fx:id="tcXRequestId" prefWidth="150.0" text="Request ID" />
+            <TableColumn fx:id="tcXPhaseName" prefWidth="222.0" text="Phase" />
+            <TableColumn fx:id="tcXPhaseStatus" editable="false" prefWidth="264.0" sortable="false" text="Phase Status" />
+            <TableColumn fx:id="tcXPhaseStartingDate" editable="false" minWidth="1.0" prefWidth="198.0" sortable="false" text="Phase Starting Date" />
+            <TableColumn fx:id="tcXPhaseDeadline" editable="false" prefWidth="166.0" sortable="false" text="Phase Deadline" />
+            <TableColumn fx:id="tcXPhaseTimeLeft" editable="false" prefWidth="234.0" sortable="false" text="Time Left for Phase" />
+            <TableColumn fx:id="tcXHasBeenTimeExtended" editable="false" prefWidth="234.0" sortable="false" text="Has been time extended?" />
+         </columns>
+         <padding>
+            <Insets right="-1.0" />
+         </padding>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ImageView fx:id="imgSearch" fitHeight="34.0" fitWidth="28.0" layoutX="36.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Table/icons8_search_50px_1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfSeachByReqId" layoutX="76.0" layoutY="163.0" prefHeight="26.0" prefWidth="223.0" promptText="Search requests by id" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1348.0">
+         <children>
+            <Text fx:id="txtPageHeader" fill="#6b6b6b" strokeType="OUTSIDE" strokeWidth="0.0" text="List of requests (Manager View)">
+               <font>
+                  <Font size="53.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="22.0" layoutY="203.0" prefHeight="49.0" prefWidth="1291.0">
+         <children>
+            <Line endX="959.0" layoutX="341.0" layoutY="48.0" startX="-331.0" stroke="#a4a3a3" strokeWidth="0.75" />
+            <Line endX="959.0" layoutX="341.0" startX="-331.0" stroke="#a4a3a3" strokeWidth="0.75" />
+            <ImageView fx:id="imgBack" fitHeight="34.0" fitWidth="28.0" layoutX="1185.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Table/icons8_back_50px_3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgForward" fitHeight="34.0" fitWidth="28.0" layoutX="1229.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Table/icons8_forward_50px_1.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="txtRequestsCount" fill="#5f5f5f" layoutX="1069.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1-20 of 2,542" />
+            <ImageView fx:id="imgSettings" fitHeight="34.0" fitWidth="28.0" layoutX="1266.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Table/icons8_settings_50px_2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgRefresh" fitHeight="34.0" fitWidth="28.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Table/icons8_reboot_50px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgMenu" fitHeight="34.0" fitWidth="28.0" layoutX="51.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Table/icons8_menu_vertical_50px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox fx:id="hbChangesDoneBySupervisor" alignment="CENTER" layoutX="328.0" layoutY="162.0" spacing="5.0">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/supervisor/icons8_change_50px.png" />
+               </image>
+            </ImageView>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="View changes done by supervisor">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

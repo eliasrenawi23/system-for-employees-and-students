@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="876.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AnalyticsGUIController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="8.0" layoutY="112.0" prefHeight="64.0" prefWidth="1015.0" spacing="80.0">
+         <children>
+            <Label fx:id="hbLast30" prefHeight="80.0" styleClass="d" stylesheets="@MainCombobox.css" text="Last 30 days" textFill="#515151" textOverrun="CLIP">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="hbLastYear" prefHeight="64.0" prefWidth="104.0" styleClass="d" stylesheets="@MainCombobox.css" text="Last year" textFill="#515151" textOverrun="CLIP">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="hbDateRange" prefHeight="64.0" prefWidth="132.0" styleClass="d" stylesheets="@MainCombobox.css" text="Date range" textFill="#515151" textOverrun="CLIP">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <DatePicker fx:id="dpFrom" promptText="from" />
+            <DatePicker fx:id="dpTo" promptText="to" />
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <Line endX="975.7999267578125" layoutX="359.0" layoutY="176.0" startX="-331.0" stroke="#757575" strokeWidth="0.75" />
+      <HBox layoutX="232.0" layoutY="261.0" prefHeight="172.0" prefWidth="975.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-border-color: #D8D8D8;">
+               <children>
+                  <VBox layoutX="8.0" layoutY="60.0" prefHeight="90.0" prefWidth="185.0" spacing="6.0">
+                     <children>
+                        <Text fx:id="txtActiveStd" strokeType="OUTSIDE" strokeWidth="0.0" text="Standard Deviation:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtActiveMedian" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtActiveAverage" strokeType="OUTSIDE" strokeWidth="0.0" text="Average:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtActiveTotal" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <Text layoutX="64.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Active">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-border-color: #D8D8D8;">
+               <children>
+                  <VBox layoutX="8.0" layoutY="60.0" prefHeight="90.0" prefWidth="185.0" spacing="6.0">
+                     <children>
+                        <Text fx:id="txtFrozenStd" strokeType="OUTSIDE" strokeWidth="0.0" text="Standard Deviation:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtFrozenMedian" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtFrozenAvg" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtFrozenTotal" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <Text layoutX="64.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frozen">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-border-color: #D8D8D8;">
+               <children>
+                  <VBox layoutX="8.0" layoutY="60.0" prefHeight="90.0" prefWidth="185.0" spacing="6.0">
+                     <children>
+                        <Text fx:id="txtClosedStd" strokeType="OUTSIDE" strokeWidth="0.0" text="Standard Deviation:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtClosedMedian" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtClosedAvg" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtClosedTotal" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <Text layoutX="64.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Closed">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-border-color: #D8D8D8;">
+               <children>
+                  <VBox layoutX="8.0" layoutY="60.0" prefHeight="90.0" prefWidth="185.0" spacing="6.0">
+                     <children>
+                        <Text fx:id="txtRejectedStd" strokeType="OUTSIDE" strokeWidth="0.0" text="Standard Deviation:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtRejectedMedian" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtRejectedAvg" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtRejectedTotal" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <Text layoutX="64.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rejected">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-border-color: #D8D8D8;">
+               <children>
+                  <VBox layoutX="8.0" layoutY="60.0" prefHeight="90.0" prefWidth="185.0" spacing="6.0">
+                     <children>
+                        <Text fx:id="txtWorkingStd" strokeType="OUTSIDE" strokeWidth="0.0" text="Standard Deviation:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtWorkingMedian" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtWorkingAvg" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtWorkingTotal" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <Text layoutX="33.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Working Days">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <DropShadow color="#00000040" offsetX="-5.0" offsetY="5.0" radius="7.032500000000001" width="9.13" />
+         </effect>
+      </HBox>
+      <HBox fx:id="hbSaveReport" alignment="CENTER" layoutX="1221.0" layoutY="137.0" spacing="5.0">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Analytics/icons8_save_50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Save Report">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox fx:id="hbLoadReport" alignment="CENTER" layoutX="1090.0" layoutY="137.0" spacing="5.0">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Analytics/icons8_downloads_50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Load Report">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="-1.0" layoutY="215.0" prefHeight="48.0" prefWidth="1348.0">
+         <children>
+            <HBox alignment="TOP_CENTER" onScroll="#onMouseScrollStatType" prefHeight="45.0" prefWidth="365.0" spacing="4.0">
+               <children>
+                  <Text fx:id="txtStatTitle" fill="#434242" strokeType="OUTSIDE" strokeWidth="0.0" text="Requests Executions">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <VBox alignment="CENTER" prefHeight="31.0" prefWidth="23.0">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_collapse_arrow_100px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="19.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_expand_arrow_100px_2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="V_RESIZE" />
+               </cursor>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="14.0" prefHeight="78.0" prefWidth="1348.0">
+         <children>
+            <Text fill="#6b6b6b" strokeType="OUTSIDE" strokeWidth="0.0" text="Analytics">
+               <font>
+                  <Font size="53.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <VBox layoutX="1131.0" layoutY="189.0" spacing="15.0" />
+      <HBox layoutX="31.0" layoutY="196.0" prefHeight="70.0" prefWidth="177.0" spacing="10.0" />
+      <BarChart fx:id="bcActivity" animated="false" layoutX="14.0" layoutY="462.0" prefHeight="400.0" prefWidth="768.0">
+        <xAxis>
+          <CategoryAxis fx:id="caActivity" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="naActivity" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="bcTotalWorking" animated="false" layoutX="808.0" layoutY="461.0" prefHeight="400.0" prefWidth="509.0">
+         <xAxis>
+            <CategoryAxis fx:id="caTotalWorking" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="naTotalWorking" side="LEFT" />
+         </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

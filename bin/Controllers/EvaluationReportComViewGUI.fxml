@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox stylesheets="@blueBorder.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EvaluationReportComViewController">
+   <children>
+      <VBox id="container" prefHeight="264.0" prefWidth="682.0" spacing="15.0">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Place:" />
+                  <Label id="text" fx:id="lblPlace" text="Label" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Description of required change:" />
+                  <Label id="text" fx:id="lblDescriptionOfRequiredChange" text="Label" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Accepted results (benefit):" />
+                  <Label id="text" fx:id="lblResults" text="Label" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Constraints:" />
+                  <Label id="text" fx:id="lblConstraint" text="Label" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Risks:" />
+                  <Label id="text" fx:id="lblRisks" text="Label" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Estimated execution time:" />
+                  <Label id="text" fx:id="lblEstimatedExecTime" text="Label" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT">
+         <children>
+            <HBox fx:id="hbBack" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="73.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/EvaluationReport/icons8_go_back_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Text id="text" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Back" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
